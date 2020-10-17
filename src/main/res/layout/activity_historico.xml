@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondo"
+        tools:context=".HistoricoActivity">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_view"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/historia"></com.airbnb.lottie.LottieAnimationView>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="Histórico"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvRegresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:text="Regresar"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/regresar"
+            android:padding="3dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtBien1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/animation_view" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtBien1">
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="La muerte del Doliente Hidalgo"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="La madrugada del 2 de enero de 1812 Félix María Calleja del Rey, capitán general del Ejército Realista, rodeó con sus hombres la Villa de Zitácurao. En ella se encontraba la Suprema Junta Nacional Americana, fundada el 19 de agoto de 1811 a convocatoria de Ignacio López Rayón.  El propósito formal de la Junta era fundar un órgano de gobierno para la nación mexicana. Ya que no reconocía la sujeción de la estructura virreinal novohispana por considerarla ilegitima y por lo tanto, una nación extranjera. La Junta se encargaría de encabezar y dirigir la insurgencia.     Esta enfrentaba una amenaza para el virrey Francisco Xavier Venegas, así que le ordenó a su mejor hombre y a su ejército que arrasaran la rebelde Villa y a la Junta.   A las 11 de la mañana  de ese 2 de enero, las tropas realistas avanzaron sobre Zitácuaro, su superioridad en hombres y armas era abrumadora. Sin embargo, los fieles al virrey se enfrentaron a una resistencia más encarnizada de lo que esperaban.  Entre la tropa insurgente, llamaba la atención un pequeño batallón integrado en su mayoría por campesinos de la Tierra Caliente, de las Provincias de Michoacán y de México.  Conocidos comúnmente como “pintos”, que avanzaban cobijados por un extraño estandarte. El aspecto era rojo y negro, que en ambos lados presentaba símbolos muy peculiares.  En el frente, sobre un paño de lana roja en la parte superior, llevaba la leyenda “el doliente de Hidalgo”.  También una segunda leyenda que dice “De á 12” Como elemento principal, una cruz negra en cuyo centro se encuentra una calavera y detrás de ésta, dos tibias en forma de cruz. Se podía observar sobre la cruz negra un arco de guerra estilizado en forma horizontal y una flecha en vertical.  Esta estaba en posición de ser disparada, ambas en sarga de lana roja, y en el centro podemos ver una corona imperial con el anagrama de la virgen María bordada con hilo blanco, orlada, sostenida con ramas de laurel y más abajo aparece una inscripción que dice: “2a Ba”.  Por lo tanto, en esta cantidad de símbolos se han prestado a múltiples interpretaciones, pasando por masónicas, esotéricas y religiosas.  La misión del “regimiento de la muerte del Doliente Hidalgo”, creado por José María, era “Defender la rebelión y vengar la muerte de Miguel Hidalgo”.  Finalmente el estandarte tomado por Calleja al aplastar a los insurrectos en Zitácuaro sirvió como trofeo para los realistas. Hoy en día es uno de los tesoros que se exhiben en el salón de banderas del Castillo de Chpultepec."
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

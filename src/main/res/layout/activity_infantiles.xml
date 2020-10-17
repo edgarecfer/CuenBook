@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondo"
+        tools:context=".InfantilesActivity">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_view"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/infantiles">
+        </com.airbnb.lottie.LottieAnimationView>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="146dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="208dp"
+            android:text="Infantiles"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.057"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvRegresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/regresar"
+            android:text="Regresar"
+            android:textColor="#F44336"
+            android:padding="3dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtBien1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/animation_view" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtBien1">
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="La bella durmiente"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Vivían en un lejano país hace muchos años, un rey y una reina, cada día se decían: “Ah, qué felices seríamos si tuviéramos un niño” Un día que la reina estaba junto a un estanque, saltó una rana a tierra y le dijo: “Tu deseo se verá realizado y antes de un año, tendrás una hija” Lo que la rana dijo se hizo realidad, y la reina tuvo una niña. Era tan preciosa que el rey no podía ocultar su gran dicha, así que decidió dar una gran fiesta para celebrar el nacimiento de la princesa.  Invitó a sus familiares, amigos y conocidos, también a las hadas del reino, para que fueran amables y generosas con la niña.  La fiesta se celebró con el máximo esplendor, las hadas obsequiaron a la niña con increíbles y extraordinarios regalos.  La primera le regaló el don de ser la más bella, la segunda el don de la bondad, la siguiente con toda clase de riquezas y así cada una de las hadas buenas y van regalando a la niña lo mejor que se puede desear en el mundo. Cuando todas las hadas, menos la más joven, habían ya obsequiado con sus fabulosos regalos a la princesa, llegó de repente un hada que no había sido invita. Quería vengarse Por no asistir a la fiesta, sin ningún aviso, y sin  mirar a  nadie grito con voz bien fuerte:  -¡La hija del rey, el día que cumpla 15 años, se pinchará en un huso de hilar, y caerá muerta inmediatamente! Sin decir nada más, se dio media vuelta abandonando el salón.  Todos quedaron desconcertados, reflejándose el disgusto en sus rostros, pero entonces la última hada que aún no había anunciado su regalo, y aunque no tenía el suficiente poder para evitar la malvada sentencia, sí pronunció un encantamiento para disminuir la terrible condena y dijo:  -¡Al pincharse, entrará en un profundo sueño durante 100 años, y solo un beso de amor hará que despierte!.  Pasaron los años y la princesa se convirtió en la joven más hermosa del reino.  El rey intentaba evitar el pinchazo que el hada malvada le había hecho a la joven, por tal motivo dio orden para que toda máquina hilandera o huso en el Reino fuera destruido.  No obstante, el día que cumplía los quince años la princesa acudió a un lugar del castillo que todos creían deshabitado, y dónde una vieja sirvienta, desconocedora de la prohibición del Rey, estaba muy ocupada hilando su luna.  -Buenos días, señora, dijo la princesa, ¿Qué estáis haciendo? ¿Qué es esa cosa que da vueltas y que suena como bella música?.  -Estoy hilando, dijo la anciana, moviendo la cabeza.  Por curiosidad, la muchacha le pidió a la mujer que le dejara probar.  -No es fácil hilar la lana, le dijo la sirvienta. Si tienes paciencia te enseñaré.  La maldición del hada estaba a punto de cumplirse. Al querer hilar, rosó el huso y se pinchó el dedo.  La mágica sentencia se había cumplido.  En cuanto sintió el pinchazo, calló sobre una cama que estaba allí, entrando en un profundo sueño.  Es como si el tiempo se hubiera detenido, ese sueño se hizo extensivo para todo el territorio del palacio.  El rey la reina quedaron también dormidos, y toda la corte con ellos. Los caballos también se durmieron en el establo, los perros en el césped, las palomas en los aleros del techo, las moscas en las paredes, incluso el fuego del hogar que ardía calentando los pucheros quedó sin calor, los cocineros y su pinche quedaron dormidos también. El viento se detuvo en los árboles cercanos al castillo, no se movía ni una hoja.  El tiempo parecía haberse detenido realmente.  Alrededor del Castillo, sumergido en el sueño, empezó a crecer como por encantó, un extraño y frondoso bosque con plantas trepadoras y espinos, que lo rodeaban y cubrían totalmente, de modo que nada de él se veía, ni siquiera la bandera que ondeaba en lo alto del castillo.  Pero la historia de la “Bella Durmiente”, que así la habían llamado, se había divulgado por toda la región de manera que de vez en cuando los hijos de los Reyes llegaban y trataban de atravesar el muro queriendo alcanzar el castillo.  Pero era una tarea imposible, Las plantas unían tan fuertemente entre sí que nadie podía entrar allí.  Y pasados cien años, otro príncipe llegó también al lugar. Allí se encontraba un anciano que relataba los hechos sucedidos hace cien años.  -Detrás de este muro esconde una bellísima princesa. Ha estado dormida cien años, también el rey, la reina y toda la corte. Muchos hijos de reyes han venido, pero ninguno ha podido pasar el muro de espino.  Entonces el joven príncipe dijo:  -No tengo miedo, iré y besare a la bella princesa.  -El buen anciano trato de disuadirlo lo más que pudo, pero el joven no hizo caso a sus advertencias.  En esa fecha los cien años ya se habían cumplido, y el día en el que la Bella Durmiente debía despertar había llegado.  Cuando el príncipe se acercó a donde estaba el muro de espinas, no había otra cosa más que bellísimas flores, que se apartaban unas de otras dejando pasar al príncipe.  En el establo del Castillo vio a los caballos dormidos y en el césped a los perros de caza sumidos en un relajado sueño, en los aleros del techo estaban las palomas con sus cabezas bajo las alas, cuando entró en palacio, las moscas estaban dormidas sobre las paredes, el cocinero en la cocina y la criada todavía permanecía sentada con la gallina que tenía preparada para desplumar.  Él joven príncipe siguió avanzando, encontrando al rey y a la reina dormidos plácidamente sobre el trono y en el gran salón al resto de la Corte.  Todo estaba tan silencioso que podía oírse un respiro, avanzó por todo el castillo hasta que llegó a la torre, despacio abrió la puerta del pequeño cuarto donde la Bella Durmiente se encontraba dormida.  Estaba tumbada sobre la cama, la contemplo entusiasmado, no podía dejar de mirarla, se detuvo ante ella y muy lentamente la besó.  Con aquel beso, la joven princesa se desperezo y abrió sus ojos, despertando del larguísimo sueño.  Al ver al príncipe, murmuró:  -Por fin habéis llegado, en mis sueños acariciaba este momento tan deseado.  El encantamiento se había roto.  La princesa se desperezó y tendió su mano al príncipe.  Cogidos de la mano, los dos jóvenes bajaron juntos las escaleras que llegaban al salón del trono, el rey y la reina despertaron, también toda la corte, todos se miraban con gran asombro. Los caballos en el establo se levantaron y se sacudieron.  Los perros cazadores saltaron como buscando su presa, las palomas en los aleros del techo sacaron sus cabezas de debajo de las alas, miraron alrededor y volaron al cielo abierto.  Las moscas de la pared revolotearon de nuevo. El fuego del hogar alzó sus llamas, el cocinero y el pinche empezaron de nuevo a cocinar y la criada desplumó la gallina dejándola lista para el cocido.  Al cabo de unos días, el castillo, hasta entonces inmerso en el silencio, se llenó de cantos, de música y de alegres risas.  El rey y la reina, aceptando al apuesto príncipe que había despertado a la princesa de su profundo sueño, decidieron celebrar una gran boda y así vivieron todos felices por largos años. "
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

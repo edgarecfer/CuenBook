@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondo"
+        tools:context=".AventuraActivity">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_view"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/aventura">
+        </com.airbnb.lottie.LottieAnimationView>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="Aventura"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvRegresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/regresar"
+            android:padding="3dp"
+            android:text="Regresar"
+            android:textColor="#F44336"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtBien1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/animation_view" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtBien1">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="La lección del coyote"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Fulgen era un conejo blanco al que encantaba salir a tomar el sol junto al lago que había cerca de su madriguera. Solía ponerse panza arriba y allí pasarse horas y horas. Siempre pensaba qué bien se vivía en aquel remanso de paz.  Un día, su tranquilidad se vio perturbada porque apareció un coyote hambriento de carne de conejo. Fulgen, al oírlo acechar entre la maleza, se puso a temblar. Echó a correr y se encerró en la madriguera de unos amigos. Les pidió ayuda para idear un plan con el que librarse de la amenaza que representaba el coyote. Siempre se habían ayudado unos a otros así que no tenía ninguna duda de que esa vez nada sería diferente.  La idea inicial fue engañarle con un conejo de peluche que se movía a pilas. La descartaron, porque el coyote tenía una vista muy aguda y se daría cuenta enseguida.  La siguiente propuesta fue atraerle con un exquisito guiso de verduras, pero al final también la desecharon porque el coyote tenía un olfato genial y se daría cuenta al momento de que no era un guiso de conejo auténtico.  La idea que mejor caló fue la de hacer una trampa con hojas secas en el suelo para que el coyote cayese en un profundo agujero que tenían previsto cavar con anterioridad. Fulgen serviría como señuelo; es decir, lo que haría sería atraer al coyote. La idea era que este se pensase que podía cazar cómodamente al conejo y, al tratar de echarle el guante, cayese en el hoyo sin poder escapar.  Las semanas previas al día que habían acordado para llevar a cabo el plan, Fulgen estuvo entrenando para ese día poder correr raudo y veloz y que el depredador no le diese caza.  El día elegido, Fulgen se levantó el primero por la mañana y desayunó ración doble de zanahorias. Se hizo además un zumo de espinacas y completó todo con unas nueces. Quería tener todas las fuerzas del mundo para que la misión acabase con éxito. Al ver aparecer al coyote, se fijó en que tenía una pata escayolada. Lo que pasaba es que un animal más grande, un oso pardo en concreto, le había atacado haciéndole daño. A Fulgen le dio mucha pena y no se atrevió a llevar a cabo el plan que había trazado con sus amigos. De hecho, lo que hicieron fue darle cobijo y curarle la pata. Desde entonces, el coyote, muy agradecido, entendió que no podía amedrentar sin razón a los animales más pequeños. Todo empezó a ir mucho mejor y la convivencia se tornó de lo más agradable y feliz."
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

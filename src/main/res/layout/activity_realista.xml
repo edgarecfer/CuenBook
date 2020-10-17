@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondo"
+        tools:context=".RealistaActivity">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_view"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/realista"></com.airbnb.lottie.LottieAnimationView>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="Realistas"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvRegresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:text="Regresar"
+            android:background="@drawable/regresar"
+            android:textColor="@color/colorPrimary"
+            android:padding="3dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtBien1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/animation_view" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtBien1">
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="La llorona"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Hace muchos años en la Ciudad de México, cerca de Xochimilco, se escuchaban los tristes lamentos de una mujer.  - ¡Ay mis hijos! Qué será de ellos - decía una voz perturbadora.  Mientras se escuchaba a la mujer misteriosa, los temerosos habitantes de la ciudad se encerraban en sus casas a base de lodo y piedra. Tampoco los antiguos conquistadores se atrevían a salir a la calle, pues los gritos de aquella mujer eran realmente espeluznantes.   Los rumores decían que se trataba de la llorona, una mujer vestida de blanco con cabellos largos y aspecto fantasmagórico, que flotaba en el aire con un velo para cubrir su horripilante rostro. Lentamente vagaba por la ciudad entre calles y plazas, y quien llegó a ser testigo de su presencia dice que al gritar, ¡ay mis hijos!, agitaba sus largos brazos de manera angustiosa, para después desaparecer en el aire y seguir aterrorizando en otras partes de la ciudad con sus quejidos y gritos.  Mientras la llorona recorría las plazas, lloraba desesperada, después de un tiempo se dirigía al río hasta perderse poco a poco en la oscuridad de la noche, y así terminar disolviéndose entre las aguas. Esto pasaba todas las noches en la ciudad de México y tenía verdaderamente inquietos a sus habitantes, pues nadie sabía la causa de aquellos lamentos. Algunas personas decían que la mujer tenía un enamorado, con el cual nunca había podido casarse gracias a que la muerte la había sorprendido inesperadamente. Al morir el hombre se quedó solo y triste, y descuidó a tal punto a sus 3 hijos, que los pobrecitos se quedaron huérfanos sin que nadie les ayudara. A causa de esto la mujer regresaba del más allá para cuidar de sus hijos, y los buscaba desesperadamente a través de gritos y lamentos.  Otra versión cuenta que hace mucho, vivía una madre junto con sus tres hijos. El padre de los niños los había abandonado hace mucho tiempo, hasta que un día, aquel hombre regresó. El hombre volvió cuando los pequeños se encontraban solos en casa y cuando la madre regresó a su hogar buscó a sus niños pero no los encontró, ni a ellos ni al hombre.  Salió y buscó por el pueblo llorando y gritando los nombres de sus niños sin poder encontrarlos. Con el pasar de los años, su búsqueda continuó, pero sin éxito alguno y tras tanto esfuerzo, la mujer falleció de la tristeza. Desde entonces su espíritu errante vaga todas las noches buscando a sus hijos, llorando y lamentando por los alrededores de los pueblos."
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

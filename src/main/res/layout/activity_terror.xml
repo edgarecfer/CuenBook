@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondo"
+        tools:context=".TerrorActivity">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_view"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/terror"></com.airbnb.lottie.LottieAnimationView>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="161dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="212dp"
+            android:text="Terror"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvRegresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/regresar"
+            android:padding="3dp"
+            android:text="Regresar"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtBien1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/animation_view" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtBien1">
+
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="La chica de la curva"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Existen diferentes versiones, pero todas ellas tienen un denominador común: una joven enfundada en un vestido blanco. Cuenta la leyenda que un padre de familia volvía del trabajo a casa por la carretera de las Costas del Garraf. Era una noche lluviosa, el frío empañaba el parabrisas y el cansancio empujaba sus párpados hacia abajo. A medida que avanzaba por la carretera, las gotas golpeaban con más violencia los cristales de su coche, que perdía estabilidad en el serpenteante trazado del asfalto.  El hombre agudizó los sentidos y redujo la marcha. En ese mismo instante, los faros del vehículo iluminaron la figura de una chica que, empapada por la lluvia, esperaba inmóvil a que algún conductor se apiadara de ella y la llevara a su destino. Sin dudarlo ni un momento, frenó en seco y la invitó a subir. Ella aceptó de inmediato, y mientras se sentaba en el lugar del copiloto, el chofer se fijó en su vestimenta. Llevaba un vestido blanco de algodón arrugado y manchado de barro. Por su pelo enmarañado, parecía que llevaba un buen rato esperando.  Reanudó el viaje y empezaron una distendida conversación en la que la chica esquivó en varias ocasiones la historia de cómo había llegado hasta aquel lugar. Hasta que llegó el momento idóneo. Con una voz fría y cortante, le pidió que redujera la velocidad hasta casi detener el vehículo. “Es una curva muy cerrada”, le advirtió. El hombre siguió su consejo y, cuando vio lo peligroso que podría haber sido, le dio las gracias. Ella, con voz cortante y fría, le espetó: “No me lo agradezcas, es mi misión. En esa curva me maté yo hace más de 25 años. Era una noche como ésta.” Un escalofrío recorrió la espalda del hombre y erizó su piel. Cuando giró la vista hacia el copiloto, la joven ya no estaba. El asiento, sin embargo, seguía húmedo."
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

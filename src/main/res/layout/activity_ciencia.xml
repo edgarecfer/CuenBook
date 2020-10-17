@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondo"
+        tools:context=".CienciaActivity">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_view"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/ciencia">
+        </com.airbnb.lottie.LottieAnimationView>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="Ciencia Ficción"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvRegresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:text="Regresar"
+            android:background="@drawable/regresar"
+            android:textColor="@color/colorPrimary"
+            android:padding="3dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtBien1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/animation_view" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtBien1">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Martin y el extraterrestre"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Cierta noche, Martin observó desde su ventana, una estela de luz que caía desde el cielo, la velocidad de la luz aumentaba cada vez más y más por lo que Martin sentía miedo y al mismo tiempo curiosidad. La luz aterrizó en un terreno abandonado a pocos metro de su casa, así es que se armó de valor y fue a investigar el origen de aquella luz tan grande y luminosa.  Encontró un gran cráter en el lugar del choque y justamente en el centro había algo en forma de disco, que sin duda era un platillo volador o una nave extraterrestre. La puerta de ésta comenzó a abrirse y el chico no tuvo tiempo ni de correr, cuando de ella salió una criatura de lo más extraña. Era de un color jade oscuro con orejas enormes que llegaban hasta el piso, media aproximadamente 60 centímetros y tenia la piel arrugada, Martin se las arregló para reprimir un grito cuando la criatura comenzó a hablar.  – Hola, me llamo Stalisky, soy de un planeta muy lejano, mi nave se estropeo, por lo que no pude completar mi viaje a Venus y caí en este planeta. – Yo soy Martin – dijo el chico estrechándole la mano – ¿cómo es que sabes hablar nuestro idioma? – Nuestra raza ha aprendido las culturas e idiomas de los 25 planetas habitables que hemos encontrado por el espacio. Te agradecería mucho que me ayudaras a reparar mi nave, ya que nuestra tecnología para corregir errores no funciona en el planeta tierra.  Martin aceptó encantado, por varias semanas fue hasta el lugar en donde estaba la nave a ayudar en la reparación. Él y Stalisky se convirtieron en muy buenos amigos, y compartieron conocimientos mutuamente. Martin aprendió que no se debe juzgar a nadie ni nada por su apariencia ni por su raza, sino que debemos ayudar a todos en lo que podamos.  Cuando llegó la hora de partir, se despidieron con un abrazo y unas bellas palabras, Martin no pudo evitar que las lagrimas corrieran por su rostro al mismo tiempo que la nave de Staisky tomaba altura y se alejaba cada vez más de la tierra."
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
